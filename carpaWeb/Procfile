@@ -1,0 +1,1 @@
+web: gunicorn carpaWeb.wsgi --log-file -
