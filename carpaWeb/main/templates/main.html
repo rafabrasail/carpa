@@ -17,11 +17,15 @@
 
 <!--Input html goes here-->
 {% block content %}
-    hello world
+    <div id='canvas'></div>
+    <div>
+        Bottom page
+    </div>
 {% endblock content %}
 
 
 <!--Input html goes here-->
 {% block scripts %}
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{% static 'js/carpa_base.js' %}"></script>
 {% endblock scripts %}

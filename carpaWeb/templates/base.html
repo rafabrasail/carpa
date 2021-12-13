@@ -6,6 +6,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
         <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'css/canva.css' %}">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
         <link rel="icon" type="image/png" href="{% static 'ico/favicon.ico' %}"/>
@@ -14,11 +15,12 @@
 
     </head>
     <body>
-        {% include "navbar.html" %}
+        <div class='container'>
+            {% include "navbar.html" %}
 
-        {% block content %}
-        {% endblock content %}
-      
+            {% block content %}
+            {% endblock content %}
+        </div>
         {% block pagination %}
         {% endblock pagination %}          
 
