@@ -5,7 +5,6 @@
 // container.appendChild( renderer.domElement );
 // const scene = new THREE.Scene();
 // Do not touch here - code for render THREE into html tag
-import {GUI} from '@three/lil-gui.module.min.js';
 
 function main() {
 	var container = document.getElementById('canvas')
@@ -13,6 +12,7 @@ function main() {
 	renderer.setSize( window.innerWidth, window.innerHeight );
 	container.appendChild( renderer.domElement );
 	const scene = new THREE.Scene();
+  var GUI = lil.GUI;
 	const gui = new GUI();
 
   const fov = 40;
