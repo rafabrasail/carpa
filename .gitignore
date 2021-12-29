@@ -6,5 +6,5 @@ __pycache__/
 *.pid
 *.dir
 .vscode/
-static/js/node_modules/
-static/js/dist/
+static/node_modules/
+static/dist/

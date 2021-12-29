@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'webpack_loader',
     'main',
 ]
 
@@ -122,14 +121,6 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static_root'
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
-
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'bundles/',
-        'STATS_FILE': BASE_DIR / 'webpack-stats.json',
-        # 'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
-    }
-}
 
 MEDIA_URL = '/media/'
 
